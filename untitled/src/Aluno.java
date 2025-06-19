@@ -1,5 +1,7 @@
 public class Aluno {
     String nome;
     int matricula;
-    double notas;
+    double notasTeste;
+    double notasProva;
+
 }
