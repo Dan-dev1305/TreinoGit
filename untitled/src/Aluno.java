@@ -14,7 +14,7 @@ public class Aluno {
             System.out.println("Parabéns você foi aprovado por média");
             System.out.printf("Sua média foi de %.2f%n", media);
         }else {
-            System.out.println("Infelismente você foi reporvado");
+            System.out.println("Infelizmente você foi reprovado");
             System.out.printf("Sua média foi de %.2f%n", media);
         }
     }

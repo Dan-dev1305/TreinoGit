@@ -14,6 +14,8 @@ public class Main {
         aluno.notasTeste = entrada.nextDouble();
         System.out.println("Informe a nota da prova");
         aluno.notasProva = entrada.nextDouble();
+        aluno.calcularNota();
+        aluno.resultadoFinal();
 
 
     }
