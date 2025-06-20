@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -15,20 +16,27 @@ public class Main {
         System.out.println("Informe a operação que deseja realizar");
         System.out.println("Digite 1 para realizar depósitos");
         System.out.println("Digite 2 para realizar retiradas");
-        System.out.println("Digite 3 para verificar o saldo");
-        System.out.println("Digite 4 para o detalhamento de sua conta");
+        System.out.println("Digite 3 para o detalhamento de sua conta");
         System.out.println("Digite 0 para finalizar o atendimento.");
         int operacao = entrada.nextInt();
-        while (operacao == 1){
+        if (operacao == 1){
             System.out.println("Informe o valor a ser depositado");
             conta.deposito = entrada.nextDouble();
             conta.depositoConta();
-            System.out.printf("Depósito realizado com sucesso. Seu novo saldo é de %.2f%n", conta.saldo);
-        }while (operacao ==2){
+            System.out.printf("Depósito realizado com sucesso. Seu novo saldo é de R$%.2f%n", conta.saldo);
+        }if (operacao ==2){
             System.out.println("Informe o valor a ser retirado");
             conta.retirada = entrada.nextDouble();
             System.out.println("Retirada efetuada com sucesso");
-            System.out.printf("Seu novo saldo é de .2%f%n", conta.saldo);
+            System.out.printf("Seu novo saldo é de R$%.2f%n", conta.saldo);
+        }if (operacao == 3){
+            System.out.printf("Titular da conta: %s%n", conta.nomeTitular);
+            System.out.printf("Número da conta: %d%n", conta.numeroConta);
+            System.out.printf("Seu saldo atual é de R$%.2f%n", conta.saldo);
+        }if (operacao == 0){
+            System.out.println("Operação finalizada");
+        }if (operacao!=1 && operacao!=2 && operacao!=3 && operacao!=0){
+            System.out.println("Opção inválida");
         }
     }
 }
