@@ -22,7 +22,5 @@ public class Main {
             conta.depositoConta();
             System.out.printf("Depósito realizado com sucesso. Seu novo saldo é de %.2f%n", conta.saldo);
         }
-
-
     }
 }
