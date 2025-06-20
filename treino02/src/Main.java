@@ -27,8 +27,8 @@ public class Main {
         }if (operacao ==2){
             System.out.println("Informe o valor a ser retirado");
             conta.retirada = entrada.nextDouble();
-            System.out.println("Retirada efetuada com sucesso");
-            System.out.printf("Seu novo saldo é de R$%.2f%n", conta.saldo);
+            conta.retiradaConta();
+
         }if (operacao == 3){
             System.out.printf("Titular da conta: %s%n", conta.nomeTitular);
             System.out.printf("Número da conta: %d%n", conta.numeroConta);
