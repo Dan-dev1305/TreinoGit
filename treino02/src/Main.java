@@ -10,6 +10,8 @@ public class Main {
         conta.nomeTitular = entrada.nextLine();
         System.out.println("Informe o número da conta");
         conta.numeroConta = entrada.nextInt();
+        System.out.println("Informe o valor do seu saldo atual");
+        conta.saldo = entrada.nextDouble();
         System.out.println("Informe a operação que deseja realizar");
         System.out.println("Digite 1 para realizar depósitos");
         System.out.println("Digite 2 para realizar retiradas");
