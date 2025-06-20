@@ -15,7 +15,8 @@ public class Main {
         System.out.println("Informe a operação que deseja realizar");
         System.out.println("Digite 1 para realizar depósitos");
         System.out.println("Digite 2 para realizar retiradas");
-        System.out.println("digite 3 para verificar o saldo");
+        System.out.println("Digite 3 para verificar o saldo");
+        System.out.println("Digite 4 para o detalhamento de sua conta");
         System.out.println("Digite 0 para finalizar o atendimento.");
         int operacao = entrada.nextInt();
         while (operacao == 1){
@@ -23,6 +24,11 @@ public class Main {
             conta.deposito = entrada.nextDouble();
             conta.depositoConta();
             System.out.printf("Depósito realizado com sucesso. Seu novo saldo é de %.2f%n", conta.saldo);
+        }while (operacao ==2){
+            System.out.println("Informe o valor a ser retirado");
+            conta.retirada = entrada.nextDouble();
+            System.out.println("Retirada efetuada com sucesso");
+            System.out.printf("Seu novo saldo é de .2%f%n", conta.saldo);
         }
     }
 }
